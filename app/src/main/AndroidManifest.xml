@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.huzhikuan.list">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Main2Activity" />
+        <activity
+            android:name=".activity.TouchActivity"
+            android:process="com.test.remote" />
+        <activity
+            android:name=".activity.ScrollActivity"
+            android:process=":remote" />
+        <activity android:name=".activity.AnimationActivity" />
+        <activity android:name=".activity.RXjavaActivity" />
+        <activity android:name=".PeopleActivity" />
+        <activity android:name=".activity.ServiceActivity" />
+        <activity android:name=".activity.TestActivity1" />
+        <activity android:name=".activity.RecyclerActivity" />
+        <activity android:name=".activity.ViewPagerActivity" />
+        <activity android:name=".activity.LeakCanaryActivity" />
+
+        <service android:name=".Utils.MyService" />
+
+        <activity
+            android:name=".activity.HandlerThreadActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.SerializableActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.huzhikuan.list.PeopleActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_tv_shadow"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="大脑发育"/>
+        <com.example.huzhikuan.list.view.WaterWallView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </com.example.huzhikuan.list.view.WaterWallView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="分析"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:gravity="left"
+                    android:textColor="#ffffff"
+                    android:text="大脑发育相对晚熟，学习记忆能力尚可，但思维效率欠缺，大脑养分代谢需求不足或脑氧利用率不足，应引起家长重视，调整生活习惯或进一步检查，定期监测。"/>
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:gravity="left"-->
+                    <!--android:text="分析"/>-->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
