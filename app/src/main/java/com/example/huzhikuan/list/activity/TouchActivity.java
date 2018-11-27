@@ -27,6 +27,7 @@ public class TouchActivity extends AppCompatActivity {
         Blayout = (LinearLayout) findViewById(R.id.Blayout);
         Clayout = (LinearLayout) findViewById(R.id.Clayout);
         DTextview = (MyTextView) findViewById(R.id.DTextview);
+        //di
 
     }
 
